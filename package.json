@@ -1,0 +1,13 @@
+{
+  "name": "node_mothercare",
+  "version": "1.0.0",
+  "description": "suivi grossesse (maman et bébé)",
+  "license": "ISC",
+  "author": "faouzia",
+  "type": "commonjs",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  }
+}

@@ -1,42 +1,72 @@
 const express = require("express");
 const cors = require("cors");
-const mongoose = require("mongoose");
 require("dotenv").config();
+
+const connectDB = require("./config/db");
 
 const server = express();
 
+connectDB();
+
+server.use(cors());
 server.use(express.json());
-server.use(cors({ origin: "http://localhost:5173" }));
 
-mongoose
-  .connect(process.env.DB_CONNECTION)
-  .then(() => console.log("MongoDB connected ✅"))
-  .catch(err => console.log(err));
 
-/* 🔐 MOCK USER (pour test) */
-const fakeUser = {
-  email: "test@gmail.com",
-  password: "1234",
-  token: "abc123token"
-};
+// ROUTES
+server.use("/api", require("./routes/auth.router"));
 
-/* REGISTER */
-server.post("/api/register", (req, res) => {
-  console.log(req.body);
-  res.json({ message: "User registered" });
+server.use("/api/pregnancy", require("./routes/pregnancy.router"));
+
+server.use("/api/baby", require("./routes/baby.router"));
+
+server.use("/api/growth", require("./routes/growth.router"));
+
+
+// HOME
+server.get("/", (req, res) => {
+  res.json({
+    message: "Backend works ✅",
+  });
 });
 
-/* LOGIN */
-server.post("/api/login", (req, res) => {
-  const { email, password } = req.body;
+// // REGISTER
+// server.post("/api/register", async (req, res) => {
 
-  if (email === fakeUser.email && password === fakeUser.password) {
-    return res.json({ token: fakeUser.token });
-  }
+//   console.log("FORM DATA:", req.body);
 
-  return res.status(401).json({ message: "Invalid credentials" });
-});
+//   res.status(201).json({
+//     message: "Utilisateur créé ✅",
+//     user: req.body,
+//   });
 
+// });
+// server.get("/api/advice-test", (req, res) => {
+//   res.json({ ok: true });
+// });
+
+
+
+
+const appointmentRoutes = require("./routes/appointment.router");
+
+server.use("/appointments", appointmentRoutes);
+
+
+
+// ADVICE ROUTE
+const adviceRouter = require("./routes/advice.router");
+server.use("/api/advice", adviceRouter);
+
+console.log("ADVICE ROUTER LOAD TEST");
+console.log("AFTER ADVICE ROUTER");
+
+server.use("/api/articles", require("./routes/article.router"));
+
+
+// SERVER
 server.listen(3000, () => {
   console.log("Server running on port 3000 🚀");
 });
+
+
+

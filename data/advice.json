@@ -1,0 +1,208 @@
+
+
+[
+  {
+    "week": 1,
+    "title": "Début du cycle 🤍",
+    "tips": ["Commence à prendre de l’acide folique.", "Adopte une alimentation saine."]
+  },
+  {
+    "week": 2,
+    "title": "Ovulation 🌸",
+    "tips": ["Période de conception possible.", "Évite alcool et tabac."]
+  },
+  {
+    "week": 3,
+    "title": "Fécondation possible ✨",
+    "tips": ["Le bébé commence à se former.", "Repose-toi bien."]
+  },
+  {
+    "week": 4,
+    "title": "Début grossesse 🤰",
+    "tips": ["Test de grossesse possible positif.", "Fatigue fréquente."]
+  },
+  {
+    "week": 5,
+    "title": "Implantation 👶",
+    "tips": ["Le bébé s’installe dans l’utérus.", "Nausées possibles."]
+  },
+  {
+    "week": 6,
+    "title": "Développement du cœur ❤️",
+    "tips": ["Le cœur commence à battre.", "Hydratation importante."]
+  },
+  {
+    "week": 7,
+    "title": "Organes en formation 🧠",
+    "tips": ["Évite stress et fatigue.", "Bonne alimentation essentielle."]
+  },
+  {
+    "week": 8,
+    "title": "Développement rapide ⚡",
+    "tips": ["Évite aliments crus.", "Repos important."]
+  },
+  {
+    "week": 9,
+    "title": "Bébé prend forme 👶",
+    "tips": ["Les traits du visage apparaissent.", "Suivi médical recommandé."]
+  },
+  {
+    "week": 10,
+    "title": "Fin embryon 🌱",
+    "tips": ["Début phase fœtale.", "Bonne hydratation."]
+  },
+  {
+    "week": 11,
+    "title": "Croissance continue 📈",
+    "tips": ["Bébé bouge légèrement.", "Nausées peuvent diminuer."]
+  },
+  {
+    "week": 12,
+    "title": "Fin 1er trimestre 🌸",
+    "tips": ["Risque fausse couche diminue.", "Échographie possible."]
+  },
+
+  {
+    "week": 13,
+    "title": "Début 2e trimestre 🌼",
+    "tips": ["Plus d’énergie.", "Bébé grandit vite."]
+  },
+  {
+    "week": 14,
+    "title": "Bébé actif 👣",
+    "tips": ["Début développement sens.", "Hydratation peau."]
+  },
+  {
+    "week": 15,
+    "title": "Sens en développement 🎧",
+    "tips": ["Bébé entend les sons.", "Marche douce recommandée."]
+  },
+  {
+    "week": 16,
+    "title": "Mouvements 👶",
+    "tips": ["Premiers mouvements ressentis.", "Repos important."]
+  },
+  {
+    "week": 17,
+    "title": "Croissance rapide 📊",
+    "tips": ["Bébé prend du poids.", "Bonne alimentation."]
+  },
+  {
+    "week": 18,
+    "title": "Développement auditif 👂",
+    "tips": ["Bébé entend mieux.", "Parle au bébé."]
+  },
+  {
+    "week": 19,
+    "title": "Peau protégée 🧴",
+    "tips": ["Utilise crème anti-vergetures.", "Repos suffisant."]
+  },
+  {
+    "week": 20,
+    "title": "Échographie morphologique 📸",
+    "tips": ["On peut connaître le sexe.", "Milieu de grossesse."]
+  },
+
+  {
+    "week": 21,
+    "title": "Bébé bouge beaucoup ⚡",
+    "tips": ["Sensations plus fortes.", "Bien dormir."]
+  },
+  {
+    "week": 22,
+    "title": "Développement cerveau 🧠",
+    "tips": ["Stimulation sonore utile.", "Marche quotidienne."]
+  },
+  {
+    "week": 23,
+    "title": "Poumons en développement 🌬️",
+    "tips": ["Respiration en préparation.", "Hydratation."]
+  },
+  {
+    "week": 24,
+    "title": "Viabilité bébé 👶",
+    "tips": ["Bébé pourrait survivre prématurément.", "Repos important."]
+  },
+
+  {
+    "week": 25,
+    "title": "Croissance rapide 📈",
+    "tips": ["Bébé grossit vite.", "Surveille alimentation."]
+  },
+  {
+    "week": 26,
+    "title": "Ouïe développée 🎧",
+    "tips": ["Bébé reconnaît ta voix.", "Parle-lui souvent."]
+  },
+  {
+    "week": 27,
+    "title": "Début 3e trimestre 🍼",
+    "tips": ["Fatigue revient.", "Préparation mentale."]
+  },
+  {
+    "week": 28,
+    "title": "Bébé très actif 👶",
+    "tips": ["Préparer valise maternité.", "Repos essentiel."]
+  },
+
+  {
+    "week": 29,
+    "title": "Gain de poids ⚖️",
+    "tips": ["Bébé grossit rapidement.", "Évite stress."]
+  },
+  {
+    "week": 30,
+    "title": "Cerveau mature 🧠",
+    "tips": ["Développement rapide.", "Alimentation riche."]
+  },
+  {
+    "week": 31,
+    "title": "Position bébé 🔄",
+    "tips": ["Bébé se retourne.", "Repos recommandé."]
+  },
+  {
+    "week": 32,
+    "title": "Préparation naissance 👶",
+    "tips": ["Bébé descend.", "Surveille contractions."]
+  },
+  {
+    "week": 33,
+    "title": "Os solides 🦴",
+    "tips": ["Bébé se renforce.", "Calcium important."]
+  },
+  {
+    "week": 34,
+    "title": "Bébé prêt 🍼",
+    "tips": ["Position finale.", "Préparer maternité."]
+  },
+  {
+    "week": 35,
+    "title": "Dernière ligne droite ⏳",
+    "tips": ["Fatigue forte.", "Repos maximal."]
+  },
+  {
+    "week": 36,
+    "title": "Accouchement proche 👶",
+    "tips": ["Surveille contractions.", "Valise prête."]
+  },
+  {
+    "week": 37,
+    "title": "Bébé à terme 🤍",
+    "tips": ["Bébé peut naître à tout moment.", "Repos."]
+  },
+  {
+    "week": 38,
+    "title": "Attente 🤰",
+    "tips": ["Surveille signes accouchement.", "Calme."]
+  },
+  {
+    "week": 39,
+    "title": "Tout est prêt 🎀",
+    "tips": ["Bébé totalement formé.", "Patience."]
+  },
+  {
+    "week": 40,
+    "title": "Jour J 👶✨",
+    "tips": ["Accouchement imminent.", "Direction maternité si contractions."]
+  }
+]

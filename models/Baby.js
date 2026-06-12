@@ -1,9 +1,22 @@
 const mongoose = require("mongoose");
 
-const babySchema = new mongoose.Schema({
-  name: String,
-  birthDate: Date,
-  userId: { type: mongoose.Schema.Types.ObjectId, ref: "User" },
+const BabySchema = new mongoose.Schema({
+  name: {
+    type: String,
+    default: "Bébé",
+  },
+  week: {
+    type: Number,
+    default: 0,
+  },
+  weight: {
+    type: Number,
+    default: 0,
+  },
+  height: {
+    type: Number,
+    default: 0,
+  },
 });
 
-module.exports = mongoose.model("Baby", babySchema);
+module.exports = mongoose.model("Baby", BabySchema);

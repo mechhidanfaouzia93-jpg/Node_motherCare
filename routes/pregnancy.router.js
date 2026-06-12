@@ -4,10 +4,11 @@ const router = express.Router();
 
 const User = require("../models/User");
 
+// GET PREGNANCY DATA
 router.get("/", async (req, res) => {
   try {
 
-    // récupère le dernier utilisateur créé
+    // récupère le dernier user inscrit
     const user = await User.findOne().sort({
       createdAt: -1,
     });

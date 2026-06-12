@@ -1,15 +1,38 @@
 const jwt = require("jsonwebtoken");
 
-module.exports = (req, res, next) => {
-  const token = req.headers.authorization?.split(" ")[1];
-
-  if (!token) return res.status(401).json({ message: "No token" });
-
+const authMiddleware = (req, res, next) => {
   try {
+    const authHeader = req.headers.authorization;
+
+    if (!authHeader) {
+      return res.status(401).json({
+        message: "Token manquant",
+      });
+    }
+
+    const token = authHeader.split(" ")[1];
+
+    if (!token) {
+      return res.status(401).json({
+        message: "Format token invalide",
+      });
+    }
+
     const decoded = jwt.verify(token, process.env.JWT_SECRET);
+
+    // 👇 IMPORTANT : user disponible partout après
     req.user = decoded;
+
+    console.log("USER AUTH:", req.user);
+
     next();
-  } catch {
-    res.status(401).json({ message: "Invalid token" });
+  } catch (error) {
+    console.error("AUTH ERROR:", error.message);
+
+    return res.status(401).json({
+      message: "Token invalide ou expiré",
+    });
   }
 };
+
+module.exports = authMiddleware;

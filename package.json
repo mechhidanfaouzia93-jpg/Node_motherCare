@@ -6,11 +6,11 @@
   "author": "faouzia",
   "type": "commonjs",
   "main": "app.js",
-  "scripts": {
-    "start": "node --env-file .env app.js",
-    "dev": "node --watch --env-file .env app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+ "scripts": {
+  "start": "node app.js",
+  "dev": "node --watch --env-file=.env app.js",
+  "test": "echo \"Error: no test specified\" && exit 1"
+},
   "dependencies": {
     "argon2": "^0.44.0",
     "cors": "^2.8.6",
